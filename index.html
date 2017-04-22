@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
   <title>Ann Marie and Brendan are getting Married</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:300,400" rel="stylesheet">
 </head>
@@ -81,7 +82,10 @@
     text-align: center;
   }
 
-  @media (max-width: 400px) {
+  @media screen and (max-width: 450px) {
+    body {
+      width: 100%;
+    }
     .menu {
       flex-direction: column;
       height: 100%;
