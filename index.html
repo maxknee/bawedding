@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ann Marie and Brendan are getting Married</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:300,400" rel="stylesheet">
+</head>
+<script src="./extras.js" charset="utf-8"></script>
+<style>
+  :root {
+    --center: auto;
+  }
+
+  body {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    max-width: 900px;
+    width: 95%;
+    margin: 0 var(--center);
+  }
+
+  h1 {
+    background-color: #ab47bc;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    padding: 10px 0;
+  }
+
+  h2 {
+    background-color: #ab47bc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  top {
+    display: block;
+  }
+
+  .fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 50vw;
+    left: 50vw;
+    margin: 0 -50%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #90caf9;
+    height: 30px;
+  }
+
+  .menu-item {
+    margin: 5px 10px 0 10px;
+  }
+
+  .map {
+    width: 100%;
+    margin: var(--center);
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  @media (max-width: 400px) {
+    .menu {
+      flex-direction: column;
+      height: 100%;
+      margin: 0 -25%;
+    }
+
+    .fixed {
+      height: 170px;
+      width: 100%;
+      margin: 0 -50%;
+    }
+
+    .menu-item {
+      padding: 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .sec {
+      padding-top: 175px;
+    }
+  }
+
+  @media screen and (min-width: 543px) {
+    body {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <top>
+    <h1>Ann Marie and Brendan are getting married!</h1>
+    <h2>Please join us for a day of jollification!</h2>
+  </top>
+  <div id="menu" class="menu">
+    <div class="menu-item">
+      <a href="#details" onclick="toggleMobile('details')">Details</a>
+    </div>
+    <div class="menu-item">
+      <a href="#location" onclick="toggleMobile('location')">Location</a>
+    </div>
+    <div class="menu-item">
+      <a href="#transportation" onclick="toggleMobile('transportation')">Transportation</a>
+    </div>
+    <div class="menu-item">
+      <a href="#hotels" onclick="toggleMobile('hotels')">Hotels</a>
+    </div>
+    <div class="menu-item">
+      <a href="#rsvp" onclick="toggleMobile('rsvp')">RSVP</a>
+    </div>
+  </div>
+  <div id="details">
+    <h2>Details:</h2>
+    <p>A block party with a pizza truck and refreshments. We will have tents and chairs. Feel free to bring your favorite lawn (street) game.</p>
+    <h2>Time: 1-6pm</h2>
+  </div>
+  <div id="location">
+    <h2>Location:</h2>
+    <div class="map">
+      <iframe width="600" height="480" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK3WgaYD5Ga0dhVWVbw7TPFgKSZtA3tok&q=39.973516,-75.183714" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+  <div class="getting-here" id="transportation">
+    <h2>How to get here:</h2>
+    <ul>
+      <li>SEPTA: bus routes 32, 48, & 7</li>
+      <li>Trolley #15</li>
+      <li>Lyft/taxi</li>
+      <li>Personal vehicle (generally there is street parking available in the area)</li>
+    </ul>
+  </div>
+  <div id="hotels" class="accomodations">
+    <h2>Accomodations</h2>
+    <ul>
+      <li>Double Tree (237 S Broad St)</li>
+      <li>Sonesta (1800 Market St)</li>
+      <li>Hilton (201 S Columbus Blvd)</li>
+      <li>AirBnB</li>
+      <li>Hostel - Chamounix Mansion (for those feeling adventurous)</li>
+    </ul>
+    <p>For anyone staying in Philadelphia for the weekend please join us for brunch at our house (908 N. 29th St) on Sunday from 11am-1pm.</p>
+  </div>
+  <div class="rsvp" id="rsvp">
+    <h2>RSVP</h2>
+    <div class="form">
+      <iframe class="rsvp-form" src="https://docs.google.com/forms/d/e/1FAIpQLScdnIiaFpDia1T06LHeghPHWuZD6gJox2LKPKfW5s33FvZA5w/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+  </div>
+  <div class="misc">
+    <h3>Gifts are optional but if you are inclined we recommend:</h3>
+    <ul>
+      <li>College Fund (529) for Otis</li>
+      <li>Lowes Gift Card</li>
+      <li>Donation to the ACLU</li>
+    </ul>
+  </div>
+</body>
+</html>
