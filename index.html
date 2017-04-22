@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ab47bc">
   <title>Ann Marie and Brendan are getting Married</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:300,400" rel="stylesheet">
 </head>
@@ -82,7 +86,11 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 450px) {
+  .scroll-hide {
+    display: none;
+  }
+
+  @media (max-width: 450px) {
 
     body {
       width: 100%;
@@ -92,13 +100,17 @@
       margin: 0 10px;
     }
 
+    .embed-map {
+      width: 100%;
+    }
+
     .menu {
       flex-direction: column;
       height: 100%;
     }
 
     .fixed {
-      height: 170px;
+      height: 204px;
       width: 100%;
     }
 
@@ -117,7 +129,7 @@
     }
   }
 
-  @media screen and (min-width: 543px) {
+  @media (min-width: 543px) {
     body {
       width: 100%;
     }
@@ -125,11 +137,14 @@
 </style>
 
 <body>
-  <top>
+  <top id="top">
     <h1>Ann Marie and Brendan are getting married!</h1>
     <h2>Please join us for a day of jollification!</h2>
   </top>
   <div id="menu" class="menu">
+    <div id="top-link" class="menu-item scroll-hide">
+      <a href="#top" onclick="toggleMobile('top')">Top</a>
+    </div>
     <div class="menu-item">
       <a href="#details" onclick="toggleMobile('details')">Details</a>
     </div>
@@ -154,7 +169,7 @@
   <div id="location">
     <h2>Location:</h2>
     <div class="map">
-      <iframe width="600" height="480" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK3WgaYD5Ga0dhVWVbw7TPFgKSZtA3tok&q=39.973516,-75.183714" allowfullscreen>
+      <iframe class="embed-map" width="600" height="480" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK3WgaYD5Ga0dhVWVbw7TPFgKSZtA3tok&q=39.973516,-75.183714" allowfullscreen>
       </iframe>
     </div>
   </div>
