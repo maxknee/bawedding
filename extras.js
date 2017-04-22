@@ -1,11 +1,14 @@
 'use strict';
-
+const classList = document.getElementsByClassName('sec');
 window.onscroll = function() {
   var nav = document.getElementById('menu');
   if ( window.pageYOffset > 100 ) {
     nav.classList.add('fixed');
   } else {
     nav.classList.remove('fixed');
+    [].forEach.call(classList, function(element) {
+      element.classList.toggle('sec');
+    });
   }
 };
 
