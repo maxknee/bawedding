@@ -11,7 +11,6 @@
   <title>Ann Marie and Brendan are getting Married</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:300,400" rel="stylesheet">
 </head>
-<script src="./extras.js" charset="utf-8"></script>
 <style>
   :root {
     --center: auto;
@@ -47,7 +46,7 @@
 
   a {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   top {
@@ -73,13 +72,6 @@
 
   .menu-item {
     margin: 5px 10px 0 10px;
-  }
-
-  .map {
-    width: 100%;
-    margin: var(--center);
-    text-align: center;
-    justify-content: center;
   }
 
   .form {
@@ -138,77 +130,17 @@
 
 <body>
   <top id="top">
-    <h1>Ann Marie and Brendan are getting married!</h1>
-    <h2>Please join us for a day of jollification!
-      <p>June 10th, 2017</p>
-    </h2>
+    <h1>
+      Ann Marie and Brendan say:
+      <p>Thanks For Coming!</p>
+    </h1>
   </top>
-  <div id="menu" class="menu">
-    <div id="top-link" class="menu-item scroll-hide">
-      <a href="#top" onclick="toggleMobile('top')">Top</a>
-    </div>
-    <div class="menu-item">
-      <a href="#details" onclick="toggleMobile('details')">Details</a>
-    </div>
-    <div class="menu-item">
-      <a href="#location" onclick="toggleMobile('location')">Location</a>
-    </div>
-    <div class="menu-item">
-      <a href="#transportation" onclick="toggleMobile('transportation')">Transportation</a>
-    </div>
-    <div class="menu-item">
-      <a href="#hotels" onclick="toggleMobile('hotels')">Hotels</a>
-    </div>
-    <div class="menu-item">
-      <a href="#rsvp" onclick="toggleMobile('rsvp')">RSVP</a>
-    </div>
-  </div>
-  <div id="details">
-    <h2>Details:</h2>
-    <p>A block party with a pizza truck and refreshments. We will have tents and chairs. Feel free to bring your favorite lawn (street) game.</p>
-    <p>Attire: Casual</p>
-    <h2>Time: 1-6pm</h2>
-  </div>
-  <div id="location">
-    <h2>Location:</h2>
-    <div class="map">
-      <iframe class="embed-map" width="600" height="480" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK3WgaYD5Ga0dhVWVbw7TPFgKSZtA3tok&q=39.973516,-75.183714" allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-  <div class="getting-here" id="transportation">
-    <h2>How to get here:</h2>
-    <ul>
-      <li>SEPTA: bus routes 32, 48, & 7</li>
-      <li>Trolley #15</li>
-      <li>Lyft/taxi</li>
-      <li>Personal vehicle (generally there is street parking available in the area)</li>
-    </ul>
-  </div>
-  <div id="hotels" class="accomodations">
-    <h2>Accomodations</h2>
-    <ul>
-      <li>Double Tree (237 S Broad St)</li>
-      <li>Sonesta (1800 Market St)</li>
-      <li>Hilton (201 S Columbus Blvd)</li>
-      <li>AirBnB</li>
-      <li>Hostel - Chamounix Mansion (for those feeling adventurous)</li>
-    </ul>
-    <p>For anyone staying in Philadelphia for the weekend please join us for brunch at our house (908 N. 29th St) on Sunday from 11am-1pm.</p>
-  </div>
+
   <div class="rsvp" id="rsvp">
-    <h2>RSVP</h2>
+    <h2>Share your Memories</h2>
     <div class="form">
-      <iframe class="rsvp-form" src="https://docs.google.com/forms/d/e/1FAIpQLScdnIiaFpDia1T06LHeghPHWuZD6gJox2LKPKfW5s33FvZA5w/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <a href="https://goo.gl/forms/L31p4fXFdX305MNg2">Please share your memories here!</a>
     </div>
-  </div>
-  <div class="misc">
-    <h3>Gifts are optional but if you are inclined we recommend:</h3>
-    <ul>
-      <li>College Fund (529) for Otis</li>
-      <li>Lowes Gift Card</li>
-      <li>Donation to the ACLU</li>
-    </ul>
   </div>
 </body>
 </html>
